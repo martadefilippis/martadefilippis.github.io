@@ -1,0 +1,43 @@
+// user-variables.scss
+// Use this to overwrite Bootstrap and Front variables
+//
+
+// Example of a variable override to change Front's primary color and font size
+// Remove the "//" to comment it in and see it in action!
+// $font-size-base: .875rem;
+
+$leaningpink:                                               #EA1E69 !default;
+$leaningpink-darker:                                        #a30f45 !default;
+$leaningpink-lighter:                                       #f273a2 !default;
+
+
+// Front's primary color has lighter as well as darker color versions,
+// and they also need to be changed upon changing the primary color to a different hex code - otherwise the color of some blocks might look not professional.
+// Here is a list of colors that associate these changes:
+// $primary-darker:                                              $red;
+// $primary-lighter:                                             $red-lighter;
+
+$primary: $leaningpink;
+$primary-darker: $leaningpink-darker;
+$primary-lighter: $leaningpink-lighter;
+$info: $primary-darker;
+$info-lighter: $primary;
+
+$gradient-half-primary: $primary-darker;
+$gradient-half-primary-lighter: $primary;
+
+$header-bg: $dark;
+
+$theme-colors: (
+    primary: $leaningpink,
+    primary-darker: $leaningpink-darker,
+    primary-lighter: $leaningpink-lighter,
+    info: $leaningpink-darker,
+    info-lighter: $leaningpink,
+    gradient-half-primary: $primary-darker,
+    gradient-half-primary-lighter: $primary,
+    header-bg: $dark
+);
+		   
+// The color of the SVG loader should be modified manually.
+// See assets/svg/preloaders/circle-preloader.svg
