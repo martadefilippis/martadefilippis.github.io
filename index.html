@@ -125,11 +125,12 @@
 		</div>
 		<div class="col col-md-7 col-lg-7 col-sm-11">
 		<div style="align-self:center; vertical-align:middle;">
-		<p style="align-self:center;">Welcome, this is Marta De Filippis, architect.</p>
+		<p style="align-self:center;">Welcome! This is Marta De Filippis, architect.</p>
 		<p style="align-self:center;">I am a beliver in: architecture for the common good, team efforts, details that matter, and coffee.</p>
-		<p style="align-self:center;" class="">Here you will find my portfolio and random informations about me and my works.</p>
-		<p style="align-self:center;" class="">Contact me either through <a href="https://www.linkedin.com/in/marta-de-filippis-7331a212a/" target="_blank" rel="noopener">Linkedin</a> or at <a href="mailto: martadefilippis24@gmail.com">martadefilippis24@gmail.com</a>.</p>
-		<p style="align-self:center;" class="">And here is my <a href="/pages/cv.html">CV</a>.</p>
+		<p style="align-self:center;" class="">As an architect, I am currently working on large-scale projects in Germany. At the same time, I realize personal side-projects in order to pursue my interests in various fields.</p>
+		<p style="align-self:center;" class="">Friends and colleagues would say that I am creative, positive, and helpful.</p>
+		<p style="align-self:center;" class="">Find here my <a href="/pages/cv.html">CV</a>, my works, and more information about me. </p>
+		<p style="align-self:center;" class="">Contact me either through <a href="https://www.linkedin.com/in/marta-de-filippis-7331a212a/" target="_blank" rel="noopener">Linkedin</a> or via email at <a href="mailto: martadefilippis24@gmail.com">martadefilippis24 at gmail dot com</a>.</p>
 		</div>
 		</div>
 		</div>
@@ -317,7 +318,8 @@ function placeBubble(elem)
 
 	childrens.forEach( x => {
 		toProcess.push(x);
-		if (toProcess.length == next)
+		N--;
+		if (toProcess.length == next || (toProcess.length == next-2 && N==0))
 		{
 			var row = document.createElement("div");
 			row.classList.add("container");
@@ -348,6 +350,8 @@ function placeBubble(elem)
 }
 var CB = document.getElementById("containerBubbles");
 placeBubble(CB);
+document.addEventListener("touchstart", function() {}, true);
+
 </script>
 
   <!-- JS Global Compulsory -->
