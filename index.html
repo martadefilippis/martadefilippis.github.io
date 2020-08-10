@@ -203,6 +203,14 @@
 	   	    <p>competition: abbey museum, San Galgano</p>
 		  </div>
 		</div>
+		  <a href="https://www.memorieurbane.it/" target="_blank" rel="noopener">
+		<div class="containerz">
+		    <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/olio.jpeg">
+		  <div class="overlay">
+	   	    <p>Concept and graphic design of the label for an extra virgin olive oil</p>
+		  </div>
+		</div>
+		  </a>
 		<a href="/pages/buro.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/buro_cover.png">
@@ -312,7 +320,10 @@ function placeBubble(elem)
 	else if (elem.clientWidth < 800)
 		MAX = 3;
 	var next = MAX;
-	if (N%(MAX+MAX-1) == next-1)
+	const K = N%(MAX+MAX-1);
+	if (K == next-1)
+		next = next-1;
+	else if (K == next-1+next-2)
 		next = next-1;
 	var toProcess = [];
 
