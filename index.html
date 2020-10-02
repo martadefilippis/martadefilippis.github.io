@@ -31,6 +31,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  
+  <!-- CSS Implementing Pallini -->
+  <link rel="stylesheet" href="/palliniN.css">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome-all.min.css">
@@ -134,7 +137,8 @@
 		</div>
 		</div>
 		</div>
-		<div class="container align-items-center mt-11" style="margin-rigth:0; margin-left:0; justify-content:center;" id="containerBubbles">
+		<div class="container align-items-center mt-11 pallini-container" number="4" style="margin-rigth:0; margin-left:0; justify-content:center;" id="containerBubbles">
+		<div class="pallini">
 		<a href="https://www.orizzontale.org/en/portfolio_page/iceberg/" target="_blank" rel="noopener">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/orizzontale-iceberg-perestrello-3-0_cover.jpg">
@@ -143,6 +147,8 @@
 		  </div>
 		</div>
 		</a>
+		</div>
+		<div class="pallini">
 		<a href="/pages/monteverde.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/monteverdi_cover.png">
@@ -151,6 +157,8 @@
 		  </div>
 		</div>
 		 </a>
+		</div>
+		<div class="pallini">
 		<a href="/pages/maxxi.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/maxxi_cover.png">
@@ -159,6 +167,8 @@
 		  </div>
 		</div>
 		 </a>
+		</div>
+		<div class="pallini">
 		<a href="https://www.baum-kappler.com/projekte/816/" target="_blank" rel="noopener">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/BKA_cover.jpg">
@@ -167,12 +177,16 @@
 		  </div>
 		</div>
 		</a>
+		</div>
+		<div class="pallini">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/coco_cover.jpeg">
 		  <div class="overlay">
 	   	    <p>interior design of cocktail bar, Fondi</p>
 		  </div>
 		</div>
+		</div>
+		<div class="pallini">
 		<a href="https://allmannsattlerwappner.de/en/projekte/1968/gollierstrasse" target="_blank" rel="noopener">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/LZB_cover.jpg">
@@ -181,6 +195,8 @@
 		  </div>
 		</div>
 		 </a>
+		</div>
+		<div class="pallini">
 		<a href="/pages/feuer.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/feuer_cover.png">
@@ -189,6 +205,8 @@
 		  </div>
 		</div>
 		 </a>
+		</div>
+		<div class="pallini">
 		<a href="/pages/apertamente.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/apertamente_cover.png">
@@ -197,18 +215,24 @@
 		  </div>
 		</div>
 		 </a>
+		</div>
+		<div class="pallini">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/san_galgano_cover.jpg">
 		  <div class="overlay">
 	   	    <p>competition: abbey museum, San Galgano</p>
 		  </div>
 		</div>
+		</div>
+		<div class="pallini">
 		<div class="containerz">
 		    <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/olio.jpeg">
 		  <div class="overlay">
 	   	    <p>concept and graphic design of the label for an extra virgin olive oil</p>
 		  </div>
 		</div>
+		</div>
+		<div class="pallini">
 		<a href="/pages/buro.html">
 		<div class="containerz">
              	 <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/portfolio/buro_cover.png">
@@ -217,6 +241,8 @@
 		  </div>
 		</div>
 		</a>
+		</div>
+		<div class="pallini">
 		  <a href="https://www.memorieurbane.it/" target="_blank" rel="noopener">
 		<div class="containerz">
 		    <img class="w-100 img-fluid rounded-circle transparent-on-hover" src="/SEPE_CHAZME_The_Trial_Of_Joseph_K_2016_cover.jpg">
@@ -225,6 +251,7 @@
 		  </div>
 		</div>
 		  </a>
+		  </div>
 	</div>
 <div class="mt-11"></div>	
 
@@ -303,62 +330,6 @@
   <!-- End Go to Top -->
 
 <script>
-function placeBubble(elem)
-{
-	var childrens = [].slice.call(elem.children);
-	var N = 0;
-	childrens.forEach( x => {
-		elem.removeChild(x);
-		N++;
-		}
-		);
-	var MAX = 4;
-	if (elem.clientWidth < 550)
-		MAX = 2;
-	else if (elem.clientWidth < 800)
-		MAX = 3;
-	var next = MAX;
-	const K = N%(MAX+MAX-1);
-	if (K == next-1)
-		next = next-1;
-	else if (K == next-1+next-2)
-		next = next-1;
-	var toProcess = [];
-
-	childrens.forEach( x => {
-		toProcess.push(x);
-		N--;
-		if (toProcess.length == next || (toProcess.length == next-2 && N==0))
-		{
-			var row = document.createElement("div");
-			row.classList.add("container");
-			row.classList.add("row");
-			row.style.justifyContent="center";
-			row.style.paddingRight="0px";
-			row.style.paddingLeft="0px";
-			row.style.marginRight="auto";
-			row.style.marginLeft="auto";
-			toProcess.forEach(y => {
-					var div = document.createElement("div");
-					if (MAX == 4)
-						div.classList.add("col-3");
-					else if (MAX == 3)
-						div.classList.add("col-4");
-					else
-						div.classList.add("col-6");
-					div.appendChild(y);
-					row.appendChild(div);
-					}
-					);
-			toProcess = [];
-			next = MAX+MAX-1-next;
-			elem.appendChild(row);
-		}
-		}
-		);
-}
-var CB = document.getElementById("containerBubbles");
-placeBubble(CB);
 document.addEventListener("touchstart", function() {}, true);
 
 </script>

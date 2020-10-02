@@ -1,0 +1,491 @@
+.pallini-container[number="2"] {
+  text-align: center;
+  display: inline-table;
+  --number: 2; }
+
+.pallini-container[number="3"] {
+  text-align: center;
+  display: inline-table;
+  --number: 3; }
+
+.pallini-container[number="4"] {
+  text-align: center;
+  display: inline-table;
+  --number: 4; }
+
+.pallini-container[number="5"] {
+  text-align: center;
+  display: inline-table;
+  --number: 5; }
+
+.pallini-container[number="6"] {
+  text-align: center;
+  display: inline-table;
+  --number: 6; }
+
+.pallini-container[number="7"] {
+  text-align: center;
+  display: inline-table;
+  --number: 7; }
+
+.pallini-container[number="8"] {
+  text-align: center;
+  display: inline-table;
+  --number: 8; }
+
+.pallini-container[number="9"] {
+  text-align: center;
+  display: inline-table;
+  --number: 9; }
+
+.pallini-container[number="10"] {
+  text-align: center;
+  display: inline-table;
+  --number: 10; }
+
+.pallini-container[number="11"] {
+  text-align: center;
+  display: inline-table;
+  --number: 11; }
+
+.pallini-container[number="12"] {
+  text-align: center;
+  display: inline-table;
+  --number: 12; }
+
+.pallini-container[number="13"] {
+  text-align: center;
+  display: inline-table;
+  --number: 13; }
+
+.pallini-container[number="14"] {
+  text-align: center;
+  display: inline-table;
+  --number: 14; }
+
+.pallini-container[number="15"] {
+  text-align: center;
+  display: inline-table;
+  --number: 15; }
+
+.pallini-container[number="16"] {
+  text-align: center;
+  display: inline-table;
+  --number: 16; }
+
+.pallini-container[number="17"] {
+  text-align: center;
+  display: inline-table;
+  --number: 17; }
+
+.pallini-container[number="18"] {
+  text-align: center;
+  display: inline-table;
+  --number: 18; }
+
+.pallini-container[number="19"] {
+  text-align: center;
+  display: inline-table;
+  --number: 19; }
+
+.pallini-container[number="20"] {
+  text-align: center;
+  display: inline-table;
+  --number: 20; }
+
+.pallini-container[number="21"] {
+  text-align: center;
+  display: inline-table;
+  --number: 21; }
+
+.pallini-container[number="22"] {
+  text-align: center;
+  display: inline-table;
+  --number: 22; }
+
+.pallini-container[number="23"] {
+  text-align: center;
+  display: inline-table;
+  --number: 23; }
+
+.pallini-container[number="24"] {
+  text-align: center;
+  display: inline-table;
+  --number: 24; }
+
+.pallini-container[number="25"] {
+  text-align: center;
+  display: inline-table;
+  --number: 25; }
+
+.pallini-container .pallini {
+  width: calc(100% / var(--number) / 1.1);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: calc(100% / var(--number) / 1.1 / 20);
+  margin-left: calc(100% / var(--number) / 1.1 / 20); }
+
+.pallini-container .pallini::after {
+  content: "";
+  display: block;
+  padding-bottom: 0%; }
+
+.pallini-container[number="2"] .pallini:nth-child(n+2) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="2"] .pallini:nth-child(3n+1):nth-last-child(n+2) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="2"] .pallini:nth-child(3n+1):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="2"] .pallini:nth-child(3n+2):nth-last-child(-2n+1) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="2"] .pallini:nth-child(3n+1):nth-last-child(-2n+0) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="3"] .pallini:nth-child(n+3) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="3"] .pallini:nth-child(5n+1):nth-last-child(n+3) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="3"] .pallini:nth-child(5n+2):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="3"] .pallini:nth-child(5n+3):nth-last-child(-2n+2) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="3"] .pallini:nth-child(5n+1):nth-last-child(-2n+1) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="4"] .pallini:nth-child(n+4) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="4"] .pallini:nth-child(7n+1):nth-last-child(n+4) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="4"] .pallini:nth-child(7n+3):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="4"] .pallini:nth-child(7n+4):nth-last-child(-2n+3) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="4"] .pallini:nth-child(7n+1):nth-last-child(-2n+2) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="5"] .pallini:nth-child(n+5) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="5"] .pallini:nth-child(9n+1):nth-last-child(n+5) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="5"] .pallini:nth-child(9n+4):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="5"] .pallini:nth-child(9n+5):nth-last-child(-2n+4) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="5"] .pallini:nth-child(9n+1):nth-last-child(-2n+3) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="6"] .pallini:nth-child(n+6) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="6"] .pallini:nth-child(11n+1):nth-last-child(n+6) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="6"] .pallini:nth-child(11n+5):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="6"] .pallini:nth-child(11n+6):nth-last-child(-2n+5) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="6"] .pallini:nth-child(11n+1):nth-last-child(-2n+4) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="7"] .pallini:nth-child(n+7) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="7"] .pallini:nth-child(13n+1):nth-last-child(n+7) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="7"] .pallini:nth-child(13n+6):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="7"] .pallini:nth-child(13n+7):nth-last-child(-2n+6) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="7"] .pallini:nth-child(13n+1):nth-last-child(-2n+5) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="8"] .pallini:nth-child(n+8) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="8"] .pallini:nth-child(15n+1):nth-last-child(n+8) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="8"] .pallini:nth-child(15n+7):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="8"] .pallini:nth-child(15n+8):nth-last-child(-2n+7) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="8"] .pallini:nth-child(15n+1):nth-last-child(-2n+6) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="9"] .pallini:nth-child(n+9) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="9"] .pallini:nth-child(17n+1):nth-last-child(n+9) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="9"] .pallini:nth-child(17n+8):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="9"] .pallini:nth-child(17n+9):nth-last-child(-2n+8) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="9"] .pallini:nth-child(17n+1):nth-last-child(-2n+7) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="10"] .pallini:nth-child(n+10) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="10"] .pallini:nth-child(19n+1):nth-last-child(n+10) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="10"] .pallini:nth-child(19n+9):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="10"] .pallini:nth-child(19n+10):nth-last-child(-2n+9) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="10"] .pallini:nth-child(19n+1):nth-last-child(-2n+8) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="11"] .pallini:nth-child(n+11) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="11"] .pallini:nth-child(21n+1):nth-last-child(n+11) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="11"] .pallini:nth-child(21n+10):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="11"] .pallini:nth-child(21n+11):nth-last-child(-2n+10) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="11"] .pallini:nth-child(21n+1):nth-last-child(-2n+9) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="12"] .pallini:nth-child(n+12) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="12"] .pallini:nth-child(23n+1):nth-last-child(n+12) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="12"] .pallini:nth-child(23n+11):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="12"] .pallini:nth-child(23n+12):nth-last-child(-2n+11) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="12"] .pallini:nth-child(23n+1):nth-last-child(-2n+10) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="13"] .pallini:nth-child(n+13) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="13"] .pallini:nth-child(25n+1):nth-last-child(n+13) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="13"] .pallini:nth-child(25n+12):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="13"] .pallini:nth-child(25n+13):nth-last-child(-2n+12) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="13"] .pallini:nth-child(25n+1):nth-last-child(-2n+11) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="14"] .pallini:nth-child(n+14) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="14"] .pallini:nth-child(27n+1):nth-last-child(n+14) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="14"] .pallini:nth-child(27n+13):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="14"] .pallini:nth-child(27n+14):nth-last-child(-2n+13) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="14"] .pallini:nth-child(27n+1):nth-last-child(-2n+12) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="15"] .pallini:nth-child(n+15) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="15"] .pallini:nth-child(29n+1):nth-last-child(n+15) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="15"] .pallini:nth-child(29n+14):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="15"] .pallini:nth-child(29n+15):nth-last-child(-2n+14) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="15"] .pallini:nth-child(29n+1):nth-last-child(-2n+13) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="16"] .pallini:nth-child(n+16) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="16"] .pallini:nth-child(31n+1):nth-last-child(n+16) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="16"] .pallini:nth-child(31n+15):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="16"] .pallini:nth-child(31n+16):nth-last-child(-2n+15) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="16"] .pallini:nth-child(31n+1):nth-last-child(-2n+14) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="17"] .pallini:nth-child(n+17) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="17"] .pallini:nth-child(33n+1):nth-last-child(n+17) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="17"] .pallini:nth-child(33n+16):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="17"] .pallini:nth-child(33n+17):nth-last-child(-2n+16) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="17"] .pallini:nth-child(33n+1):nth-last-child(-2n+15) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="18"] .pallini:nth-child(n+18) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="18"] .pallini:nth-child(35n+1):nth-last-child(n+18) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="18"] .pallini:nth-child(35n+17):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="18"] .pallini:nth-child(35n+18):nth-last-child(-2n+17) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="18"] .pallini:nth-child(35n+1):nth-last-child(-2n+16) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="19"] .pallini:nth-child(n+19) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="19"] .pallini:nth-child(37n+1):nth-last-child(n+19) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="19"] .pallini:nth-child(37n+18):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="19"] .pallini:nth-child(37n+19):nth-last-child(-2n+18) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="19"] .pallini:nth-child(37n+1):nth-last-child(-2n+17) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="20"] .pallini:nth-child(n+20) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="20"] .pallini:nth-child(39n+1):nth-last-child(n+20) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="20"] .pallini:nth-child(39n+19):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="20"] .pallini:nth-child(39n+20):nth-last-child(-2n+19) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="20"] .pallini:nth-child(39n+1):nth-last-child(-2n+18) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="21"] .pallini:nth-child(n+21) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="21"] .pallini:nth-child(41n+1):nth-last-child(n+21) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="21"] .pallini:nth-child(41n+20):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="21"] .pallini:nth-child(41n+21):nth-last-child(-2n+20) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="21"] .pallini:nth-child(41n+1):nth-last-child(-2n+19) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="22"] .pallini:nth-child(n+22) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="22"] .pallini:nth-child(43n+1):nth-last-child(n+22) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="22"] .pallini:nth-child(43n+21):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="22"] .pallini:nth-child(43n+22):nth-last-child(-2n+21) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="22"] .pallini:nth-child(43n+1):nth-last-child(-2n+20) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="23"] .pallini:nth-child(n+23) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="23"] .pallini:nth-child(45n+1):nth-last-child(n+23) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="23"] .pallini:nth-child(45n+22):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="23"] .pallini:nth-child(45n+23):nth-last-child(-2n+22) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="23"] .pallini:nth-child(45n+1):nth-last-child(-2n+21) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="24"] .pallini:nth-child(n+24) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="24"] .pallini:nth-child(47n+1):nth-last-child(n+24) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="24"] .pallini:nth-child(47n+23):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="24"] .pallini:nth-child(47n+24):nth-last-child(-2n+23) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="24"] .pallini:nth-child(47n+1):nth-last-child(-2n+22) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="25"] .pallini:nth-child(n+25) {
+  margin-top: calc(-100% / var(--number) / 1.1 / 10); }
+
+.pallini-container[number="25"] .pallini:nth-child(49n+1):nth-last-child(n+25) {
+  margin-left: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="25"] .pallini:nth-child(49n+24):nth-last-child(n+2) {
+  margin-right: calc(100% / var(--number) / 1.1 / 2); }
+
+.pallini-container[number="25"] .pallini:nth-child(49n+25):nth-last-child(-2n+24) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
+
+.pallini-container[number="25"] .pallini:nth-child(49n+1):nth-last-child(-2n+23) {
+  margin-left: calc(100% / var(--number) / 1.1 * 1.15); }
