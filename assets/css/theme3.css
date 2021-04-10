@@ -180,18 +180,25 @@ p {
 h2 {
 	font-size: 1.2em;
 	margin-top: 0;
-	margin-bottom: 0.7em;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 h1 {
 	font-size: 1.4em;
 	margin-top: 0;
+	margin-bottom: 0.4em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 .h1-special {
 	font-size: 1.1em;
 	font-weight: normal;
 	margin-bottom: 1.5em;
+	text-transform: none;
+	letter-spacing: 0;
 }
 
 p:first-of-type {
@@ -211,7 +218,7 @@ main {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	font-family: "Lato", "Manrope", "Nunito Sans", "Lato", "Poppins", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Lato", "Manrope", "Nunito Sans", "Lato", "Poppins", Helvetica, Arial, sans-serif;
 	color: var(--main-text);
 }
 img {
@@ -435,6 +442,13 @@ padding: 0.48em;
 .gridd {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0.48em;
+	gap: 0.48em;
+}
+
+.gridd2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 0.48em;
 	gap: 0.48em;
 }
