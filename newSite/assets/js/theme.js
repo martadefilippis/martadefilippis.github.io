@@ -1,4 +1,4 @@
-function toggleColorSetting(elem, event_)
+function toggleColorSetting(event_)
 {
 	event_.preventDefault();
 	const namePreference = "dark-preference";
@@ -20,7 +20,7 @@ function toggleColorSetting(elem, event_)
 	event_.stopPropagation();
 }
 
-function setColorSetting(elem)
+function setColorSetting()
 {
 	const namePreference = "dark-preference";
 	const storedPreference = window.localStorage.getItem(namePreference);
@@ -42,3 +42,10 @@ document.querySelectorAll(".toggle-darkness").forEach(function(node) {
 			setColorSetting(node);
 		}
 		);
+
+function changeSRC(elem, src)
+{
+	elem.src = src;
+	console.log(src);
+	elem.onload="";
+}

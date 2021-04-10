@@ -1,6 +1,6 @@
 :root {
-	--side-background: #111;
-	--banner-background: #333;
+	--side-background: #222;
+	--banner-background: #222;
 	--banner-text: #9b9b9b;
 	--main-background: #222;
 	--main-text: #898989;
@@ -10,10 +10,10 @@
 }
 
 .white-color {
-	--side-background: #aaa;
+	--side-background: #bbb;
 	--banner-background: #bbb;
 	--banner-text: #444;
-	--main-background: #ccc;
+	--main-background: #bbb;
 	--main-text: #555;
 	--selection-background: #333;
 	--selection-text: #fff; 
@@ -63,6 +63,7 @@
 .row {
 	display: inline-flex;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
 .contents{
@@ -167,11 +168,30 @@ p {
 	margin-block: 0;
 	margin-inline: 0;
 	margin-top: 1.5em;
+	font-size: 1.1em;
 }
 
 .smaller > p {
 	margin-top: 0.5em;
-	font-size: 10px + 0.1em;
+	font-size: calc(14px + 0.1em);
+	line-height: 0.8;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-top: 0;
+	margin-bottom: 0.7em;
+}
+
+h1 {
+	font-size: 1.4em;
+	margin-top: 0;
+}
+
+.h1-special {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: 1.5em;
 }
 
 p:first-of-type {
@@ -196,9 +216,11 @@ main {
 }
 img {
 	display: block;
+	width: 100%;
+	height: auto;
 }
 
-.round {
+.round3 {
 	border-radius: 50%;
 }
 
@@ -228,7 +250,7 @@ button {
 
 .special-button {
 	border-color: var(--banner-text);
-	border-style: solid;
+	border-style: none;
 	border-width: 0.07em;
 	background-color: inherit;
 	margin: 0;
@@ -264,6 +286,14 @@ button {
 
 .flexi-4 {
 	flex: 4 0 0;
+}
+
+.flexi-5 {
+	flex: 5 0 0;
+}
+
+.flexi-6 {
+	flex: 6 0 0;
 }
 
 
@@ -347,7 +377,7 @@ html:not(.white-color) .hide-on-dark {
 }
 
 .img-grey-50 img{
-	filter: opacity(87%);
+	filter: opacity(93%);
 }
 .img-grey-50:hover img {
 	filter: none;
@@ -369,6 +399,7 @@ html:not(.white-color) .hide-on-dark {
 }
 
 .containerthin {
+  min-height: 40px;
 }
 .containerthin:after {
   content: "";
@@ -392,6 +423,34 @@ html:not(.white-color) .hide-on-dark {
 .container32 {
 padding: 0.24em;
 }
+.container64 {
+padding: 0.48em;
+}
 
+.gridd {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0.48em;
+	gap: 0.48em;
+}
 
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 0.48em;
+	gap: 0.48em;
+}
 
+.gridd-left{
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+}
+
+.gridd-right{
+	grid-column: 3 / 5;
+	grid-row: 1 / 3;
+}
+
+.container64 > p {
+	margin-bottom: 0.48em;
+}
