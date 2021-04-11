@@ -473,3 +473,12 @@ padding: 0.48em;
 .container64 > p {
 	margin-bottom: 0.48em;
 }
+
+.squares:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.squares > img {
+  position: absolute;
+}
