@@ -482,3 +482,41 @@ padding: 0.48em;
 .squares > img {
   position: absolute;
 }
+
+.addresscontainer {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.address {
+	max-width: 100%;
+	min-width: 75%;
+	display: flex;
+	flex-direction: row-reverse;
+	border-top: solid thin var(--selection-background);
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.addresscontainer2 {
+	padding-left: 2em;
+}
+
+.addresscontainer2 > p {
+	background-color: var(--selection-background);
+	color: var(--selection-text);
+	padding-left: 1em;
+	padding-right: 0.12em;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 1em 100%, 0% 0%);
+	margin: 0;
+}
+
+.addresscontainer + .container64{
+	padding-top: 0;
+}
+.addresscontainer + .container32{
+	padding-top: 0;
+}
