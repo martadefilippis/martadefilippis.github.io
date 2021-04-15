@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://martadefilippis.github.io/</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/monteverde.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/san-galgano.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/apertamente.html</loc>
+  <lastmod>2021-04-15T07:59:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/maxxi.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/miscellaneous.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/curriculum.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/feuermauer.html</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://martadefilippis.github.io/.</loc>
+  <lastmod>2021-04-15T07:59:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
