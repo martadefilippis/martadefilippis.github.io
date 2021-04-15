@@ -1,0 +1,4 @@
+mogrify -path 125/ -resize 125 *g
+mogrify -path 250/ -resize 250 *g
+mogrify -path 500/ -resize 500 *g
+
