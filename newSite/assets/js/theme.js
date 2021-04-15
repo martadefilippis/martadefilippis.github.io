@@ -27,25 +27,16 @@ function setColorSetting()
 	var S;
 	if (storedPreference == null || storedPreference == "black")
         {
-		S = "black";
+		if (document.documentElement.classList.contains("white-color"))
+			document.documentElement.classList.remove("white-color");
         }
         else
         {       
 		document.documentElement.classList.add("white-color");
-		S = "white";	
 
-		window.localStorage.setItem(namePreference, S);
+		window.localStorage.setItem(namePreference, "white");
         }
 }
 
-document.querySelectorAll(".toggle-darkness").forEach(function(node) {
-			setColorSetting(node);
-		}
-		);
-
-function changeSRC(elem, src)
-{
-	elem.src = src;
-	console.log(src);
-	elem.onload="";
-}
+setColorSetting();
+document.addEventListener("visibilitychange", setColorSetting);
