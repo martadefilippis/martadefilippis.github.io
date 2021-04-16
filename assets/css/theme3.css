@@ -4,16 +4,16 @@
 	--banner-text: #9b9b9b;
 	--main-background: #222;
 	--main-text: #898989;
-	--selection-background: #bbb;
+	--selection-background: gainsboro;
 	--selection-text: #000; 
 	--black-transform: invert(70%); 
 }
 
 .white-color {
-	--side-background: #bbb;
-	--banner-background: #bbb;
+	--side-background: gainsboro;
+	--banner-background: gainsboro;
 	--banner-text: #444;
-	--main-background: #bbb;
+	--main-background: gainsboro;
 	--main-text: #555;
 	--selection-background: #333;
 	--selection-text: #fff; 
